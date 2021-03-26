@@ -10,7 +10,7 @@ public class MainFrame extends JFrame {
 
     public MainFrame()
     {
-        super("bagameas pl in el java");
+        super("test");
         init();
     }
 
