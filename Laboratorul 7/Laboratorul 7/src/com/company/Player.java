@@ -37,19 +37,4 @@ public class Player extends Thread {
         System.out.println(this.pName + " are scorul " + this.score);
     }
 
-
-
-    @Override
-    public void run() {
-        for(int j=0; j<5;j++) {
-            this.setScore(this.getScore() + Board.tokens.get(j).getValue());
-            try {
-                this.join();
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }
-        this.printScore();
-
-    }
 }
